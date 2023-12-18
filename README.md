@@ -1,5 +1,5 @@
 # Relic-bbs-fault-injection
-Contains a pdf (CVE_report_relic.pdf) vulnerability report for BB short signature in relic library. Here are some abstract of our code in src directory. 
+Contains a pdf (Vulner_report_relic.pdf) vulnerability report for BB short signature in relic library. Here are some abstract of our code in src directory. 
 
 For more details such as theoretical analysis and experiment evaluation, we highly recommend you to read CVE_report_relic.pdf.
 ## memory-profiling
