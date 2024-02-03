@@ -13,3 +13,11 @@ We presented theoretical analysis of how this fault injection attack towards bbs
 
 ## Experiment Evaluation
 The experiment result and code of this fault injection attack via Rowhammer can be found in attachment experiment.pdf. For more details, read the pdf.
+
+## Support
+Feel free to submit Github issues, pull requests, or contact the following maintainers.
+
+- Junkai Liang: [Github](https://github.com/liang-junkai), [Email](ljknjupku@gmail.com)
+- Zhi Zhang: [Github](https://github.com/zhangzhics), [Email](zzhangphd@gmail.com)
+- Xin Zhang: [Github](https://github.com/zhangxin00), [Email](zhangxin00@stu.pku.edu.cn)
+- Qingni Shen: Github, [Email](qingnishen@pku.edu.cn)
