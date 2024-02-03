@@ -1,7 +1,7 @@
 # Leak the Secret Key of BBS Short Signature in Relic via Rowhammer
 More details can be found in this repo related to [**CVE-2023-51939**](https://nvd.nist.gov/vuln/detail/CVE-2023-51939), we decribe our theoretical analysis and experiment results below.
 
-## Overview
+## Background
 We cloned the relic repo from github on December 10, 2023 and have analyzed the source code of the Boneh Boyen short signature (or bbs) scheme (more precisely, [relic_cp_bbs.c](https://github.com/relic-toolkit/relic/blob/main/src/cp/relic_cp_bbs.c)). Based on our analysis, the signature implementation (Line 70 in relic_cp_bbs.c) is vulnerable to fault attacks.
 
 As a proof-of-concept (PoC), we have recovered 190 bits out of 224 secret bits via Rowhammer. In technology aspect, Rowhammer is software-induced DRAM fault, which can induce bit flips in main memory that runs a commodity system. In our PoC, a malicious user process co-resides in the same system with a victim process that runs the bbs short signature from the relic library. As both processes share the main memory, the adversary can induce bit flips to the secret key before it is used by the victim to sign a message, resulting in a faulty signature. With enough faulty signatures released, the adversary can recover/leak the secret key. For more details of the analysis, PoC and possible countermeasures, they are provided in the following page.
