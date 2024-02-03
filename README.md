@@ -9,10 +9,10 @@ As a proof-of-concept (PoC), we have recovered 190 bits out of 224 secret bits v
 Before our report, RSA implementation in the WolfSSL library and the OpenSSL library have been reported to be vulnerable to Rowhammer-based fault attacks. For the WolfSSL library, its vulnerability is tracked via [CVE-2019-19962](https://nvd.nist.gov/vuln/detail/CVE-2019-19962). For the OpenSSL library, its RSA vulnerability is tracked by a [commit]( https://github.com/openssl/openssl/pull/7225/commits/02534c1ee3e84a1d6c59a887a67bd5ee81bcf6cf).  Clearly, we target a different cryptographic algorithm, i.e., bbs signature. 
 
 ## Theoretical Analysis
-We presented theoretical analysis of how this fault injection attack towards bbs signature works in attachment theoretical.pdf. For more details, read the pdf.
+We presented theoretical analysis of how this fault injection attack towards bbs signature works in attachment theoretical.pdf. For more details, please read the pdf.
 
 ## Experiment Evaluation
-The experiment result and code of this fault injection attack via Rowhammer can be found in attachment experiment.pdf. For more details, read the pdf.
+The experiment result and code of this fault injection attack via Rowhammer can be found in attachment experiment.pdf. For more details, please read the pdf.
 
 ## Support
 Feel free to submit Github issues, pull requests, or contact the following maintainers.
